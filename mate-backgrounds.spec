@@ -1,13 +1,14 @@
+%define url_ver %(echo %{version}|cut -d. -f1,2)
+
 Summary:	Background images for the MATE desktop
 Name:		mate-backgrounds
-Version:	1.4.0
+Version:	1.8.0
 Release:	1
 License:	GPLv2
 Group:		Graphical desktop/GNOME
 Url:		http://mate-desktop.org
-Source0:	http://pub.mate-desktop.org/releases/1.2/%{name}-%{version}.tar.xz
+Source0:	http://pub.mate-desktop.org/releases/%{url_ver}/%{name}-%{version}.tar.xz
 BuildArch:	noarch
-
 BuildRequires:	intltool
 BuildRequires:	mate-common
 
@@ -16,9 +17,9 @@ This module contains a set of backgrounds packaged with the MATE desktop.
 
 %prep
 %setup -q
+NOCONFIGURE=1 ./autogen.sh
 
 %build
-NOCONFIGURE=1 ./autogen.sh
 %configure2_5x
 %make
 
@@ -29,6 +30,6 @@ NOCONFIGURE=1 ./autogen.sh
 %files -f %{name}.lang
 %doc NEWS README AUTHORS
 %{_datadir}/mate-background-properties/
-%dir %{_datadir}/pixmaps/backgrounds/mate
-%{_datadir}/pixmaps/backgrounds/mate/*
+%dir %{_datadir}/backgrounds/mate
+%{_datadir}/backgrounds/mate/*
 
