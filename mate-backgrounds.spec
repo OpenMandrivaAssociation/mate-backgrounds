@@ -18,7 +18,7 @@ This module contains a set of backgrounds packaged with the MATE desktop.
 %setup -q
 
 %build
-#NOCONFIGURE=1 ./autogen.sh
+NOCONFIGURE=1 ./autogen.sh
 %configure
 %make
 
