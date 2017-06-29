@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   mate-backgrounds-1.14.0.tar.xz: 0dd81659b362862f6da1f48900609a09133053bb
+sources:
+  mate-backgrounds-1.18.0.tar.xz: b282bd6495175d96c561e8bd468cd0129759978d
