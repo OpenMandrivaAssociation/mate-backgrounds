@@ -9,7 +9,11 @@ Group:		Graphical desktop/GNOME
 Url:		https://mate-desktop.org
 Source0:	https://pub.mate-desktop.org/releases/%{url_ver}/%{name}-%{version}.tar.xz
 BuildArch:	noarch
+BuildRequires:	intltool
 BuildRequires:	mate-common
+BuildRequires:	pkgconfig(glib-2.0)
+BuildRequires:	pkgconfig(gtk-doc)
+BuildRequires:	itstool 
 
 %description
 This module contains a set of backgrounds packaged with the MATE desktop.
