@@ -41,10 +41,10 @@ MATE desktop.
 %build
 #NOCONFIGURE=1 ./autogen.sh
 %configure
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 # locales
 %find_lang %{name} --with-gnome --all-name
