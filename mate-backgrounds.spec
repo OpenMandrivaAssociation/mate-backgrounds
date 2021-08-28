@@ -28,7 +28,7 @@ preserving a traditional desktop experience.
 This package provides a set of backgrounds images and data packaged with the
 MATE desktop.
 
-%files -f %{name}.lang
+%files
 %doc NEWS README AUTHORS
 %{_datadir}/mate-background-properties/
 %dir %{_datadir}/backgrounds/mate
@@ -48,5 +48,5 @@ MATE desktop.
 %make_install
 
 # locales
-%find_lang %{name} --with-gnome --all-name
+#find_lang %{name} --with-gnome --all-name
 
