@@ -3,7 +3,7 @@
 Summary:	Background images for the MATE desktop
 Name:		mate-backgrounds
 Version:	1.26.0
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
 Url:		https://mate-desktop.org
