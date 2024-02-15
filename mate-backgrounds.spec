@@ -1,13 +1,13 @@
-%define url_ver %(echo %{version}|cut -d. -f1,2)
+%define mate_ver	%(echo %version | cut -d\. -f1-2)
 
 Summary:	Background images for the MATE desktop
 Name:		mate-backgrounds
-Version:	1.26.0
-Release:	2
+Version:	1.28.0
+Release:	1
 License:	GPLv2+
 Group:		Graphical desktop/GNOME
 Url:		https://mate-desktop.org
-Source0:	https://pub.mate-desktop.org/releases/%{url_ver}/%{name}-%{version}.tar.xz
+Source0:	https://pub.mate-desktop.org/releases/%{mate_ver}/%{name}-%{version}.tar.xz
 BuildArch:	noarch
 
 BuildRequires:	autoconf-archive
