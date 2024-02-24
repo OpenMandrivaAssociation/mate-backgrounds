@@ -37,7 +37,7 @@ MATE desktop.
 #---------------------------------------------------------------------------
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 #NOCONFIGURE=1 ./autogen.sh
